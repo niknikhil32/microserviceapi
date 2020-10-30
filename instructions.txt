@@ -1,0 +1,13 @@
+1-Install python three and pip3 first
+2-pip3 install pipenv
+3-pipenv shell
+4-pipenv lock -r > requirements.txt
+
+#Building Docker files
+
+docker build -t serviceone .
+docker run -it -p 5000:5000 pythonserviceone
+
+/// Kubernetes deployment
+
+kubectl apply -f kubernets.yml
